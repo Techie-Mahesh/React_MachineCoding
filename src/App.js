@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Typography } from "@mui/material";
+import TimeInterval from "./TimeInterval";
+import TimeInterval2 from "./TimeInterval2";
+import Images from "./Images";
+import Form from "./form";
+import ImperativeHook from "./useImperativeHook";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Images /> */}
+      {/* <Form /> */}
+      <Typography variant="h4">Time Interval</Typography>
+      <ImperativeHook />
     </div>
   );
 }
