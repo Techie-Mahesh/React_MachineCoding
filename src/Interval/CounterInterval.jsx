@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
 
+// This component demonstrates a counter that increments and decrements its value
+// Example: CounterInterval - 0
+// The counter starts at 0 and increments to 5, then decrements back to 0, and repeats this cycle.
+
+
 const CounterInterval = () => {
   const [counter, setCounter] = useState(0);
   const [isIncrementing, setIsIncrementing] = useState(true);

@@ -1,6 +1,8 @@
 import { Button } from "@mui/material";
 import React, { useState, useRef, useEffect } from "react";
 
+// This component demonstrates a timer that increments its value by 1 every second
+
 const Timer = () => {
   const [timer, setTimer] = useState(0);
   const intervalIdRef = useRef(null); // Use useRef to store the interval ID
