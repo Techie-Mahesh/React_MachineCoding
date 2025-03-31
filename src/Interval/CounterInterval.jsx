@@ -1,21 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const CounterInterval = () => {
-  const [count, setCount] = useState(0);
-  useEffect(() => {
-    let counter = 0;
-    setTimeout(() => {
-      setCount(prev => {
-        if (prev >= 0 && prev <= 5) {
-          counter = counter + 1;
-          return prev + 1;
-        } else {
-          counter = counter - 1;
-          return prev - 1;
-        }
-      });
-    }, 1000);
-  });
   const [counter, setCounter] = useState(0);
   const [isIncrementing, setIsIncrementing] = useState(true);
 
@@ -36,7 +21,7 @@ const CounterInterval = () => {
 
     return () => clearInterval(interval);
   }, [isIncrementing]);
-  return <div>CounterInterval {counter}</div>;
+  return <div>CounterInterval - {counter}</div>;
 };
 
 export default CounterInterval;
