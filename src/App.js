@@ -13,10 +13,10 @@ function App() {
     <div className="App">
       <CounterInterval />
       <Timer />
+      <Typography variant="h4">Time Interval</Typography>
       <TimeInterval />
       {/* <Images /> */}
       {/* <Form /> */}
-      <Typography variant="h4">Time Interval</Typography>
       {/* <ToDoList /> */}
       {/* <Form1 /> */}
       {/* <ImperativeHook /> */}
