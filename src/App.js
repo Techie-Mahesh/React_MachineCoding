@@ -7,6 +7,7 @@ import Form1 from "./Lists";
 import CounterInterval from "./Interval/CounterInterval";
 import Timer from "./Interval/Timer";
 import TimeInterval from "./Interval/TimeInterval";
+import InfiniteScrolling from "./pagination/InfiniteScrolling";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       {/* <ToDoList /> */}
       {/* <Form1 /> */}
       {/* <ImperativeHook /> */}
+      <InfiniteScrolling />
     </div>
   );
 }

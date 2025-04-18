@@ -31,6 +31,21 @@ export default function DecrementTimer() {
     return () => clearInterval(intervalRef.current);
   }, []);
 
+  //   Decrement action without buttons
+  //   useEffect(() => {
+  //     intervalRef.current = setInterval(() => {
+  //       setTimer((prev) => {
+  //         if (prev > 0) {
+  //           return prev - 1;
+  //         } else {
+  //           clearInterval(intervalRef.current);
+  //           return 0;
+  //         }
+  //       });
+  //     }, 500);
+  //     return () => clearInterval(intervalRef.current);
+  //   }, []);
+
   return (
     <div>
       <h1>Hello StackBlitz! {timer} </h1>
