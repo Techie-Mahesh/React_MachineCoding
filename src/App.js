@@ -8,20 +8,24 @@ import CounterInterval from "./Interval/CounterInterval";
 import Timer from "./Interval/Timer";
 import TimeInterval from "./Interval/TimeInterval";
 import InfiniteScrolling from "./pagination/InfiniteScrolling";
+import PaginationPosts from "./pagination/PaginationPosts";
+import TrafficLights from "./trafficLights";
 
 function App() {
   return (
     <div className="App">
-      <CounterInterval />
+      {/* <CounterInterval />
       <Timer />
       <Typography variant="h4">Time Interval</Typography>
-      <TimeInterval />
+      <TimeInterval /> */}
       {/* <Images /> */}
       {/* <Form /> */}
       {/* <ToDoList /> */}
       {/* <Form1 /> */}
       {/* <ImperativeHook /> */}
-      <InfiniteScrolling />
+      {/* <InfiniteScrolling /> */}
+      {/* <PaginationPosts /> */}
+      <TrafficLights />
     </div>
   );
 }
