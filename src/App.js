@@ -10,6 +10,7 @@ import TimeInterval from "./Interval/TimeInterval";
 import InfiniteScrolling from "./pagination/InfiniteScrolling";
 import PaginationPosts from "./pagination/PaginationPosts";
 import TrafficLights from "./trafficLights";
+import ExtractJson from "./extractKeysFromJSON/ExtractJson";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
       {/* <ImperativeHook /> */}
       {/* <InfiniteScrolling /> */}
       {/* <PaginationPosts /> */}
-      <TrafficLights />
+      <ExtractJson />
+      {/* <TrafficLights /> */}
     </div>
   );
 }
