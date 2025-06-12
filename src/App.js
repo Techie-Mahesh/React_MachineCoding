@@ -11,6 +11,7 @@ import InfiniteScrolling from "./pagination/InfiniteScrolling";
 import PaginationPosts from "./pagination/PaginationPosts";
 import TrafficLights from "./trafficLights";
 import ExtractJson from "./extractKeysFromJSON/ExtractJson";
+import ChipsInput from "./components/ChipsInput";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       {/* <InfiniteScrolling /> */}
       {/* <PaginationPosts /> */}
       <ExtractJson />
+      <ChipsInput />
       {/* <TrafficLights /> */}
     </div>
   );
