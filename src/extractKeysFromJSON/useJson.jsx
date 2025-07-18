@@ -12,7 +12,15 @@ const invokeJsonFromKeys = () => {
           return value;
         }
       }
+    } else if (
+      typeof data === "string" ||
+      typeof data === "number" ||
+      typeof data === "boolean"
+    ) {
+      // Check if primitive matches the key
+      return data === key ? data : undefined;
     }
+    return undefined;
   };
   return (jsonString, keys) => getKeyValue(jsonString, keys);
 };
